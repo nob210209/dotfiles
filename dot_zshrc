@@ -33,6 +33,7 @@ zinit for \
 if [ -e /usr/local/share/zsh-completions ]; then
   fpath=(/usr/local/share/zsh-completions $fpath)
 fi
+
 # zsh setting
 ## History
 HISTFILE=~/.zsh_history
@@ -69,3 +70,5 @@ eval "$(direnv hook zsh)"
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="/Users/wtanabe-ryota/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)### End of Zinit's installer chunk
+
+source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
